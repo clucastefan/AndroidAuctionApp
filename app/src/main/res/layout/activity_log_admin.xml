@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogAdminActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iOS_animation_view_join"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        android:layout_marginBottom="10dp"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_fileName="green.json"
+        app:layout_constraintBottom_toTopOf="@id/iOS_til_adminlogin_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_loop="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iOS_til_adminlogin_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="70dp"
+        android:paddingLeft="70dp"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:layout_constraintBottom_toTopOf="@id/iOS_til_adminlogin_password"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/iOS_tiet_adminlogin_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="12dp"
+            android:hint="@string/hint_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iOS_admin_image_username"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_fileName="profile.json"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iOS_til_adminlogin_username"
+        app:layout_constraintStart_toEndOf="@id/iOS_til_adminlogin_username"
+        app:layout_constraintBottom_toBottomOf="@id/iOS_til_adminlogin_username"
+        app:lottie_loop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iOS_til_adminlogin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="70dp"
+        android:paddingLeft="70dp"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:layout_constraintBottom_toTopOf="@id/iOS_til_adminlogin_accesskey"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/iOS_tiet_adminlogin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:inputType="textPassword"
+            android:textSize="12dp"
+            android:hint="@string/hint_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iOS_admin_image_password"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_fileName="key.json"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iOS_til_adminlogin_password"
+        app:layout_constraintStart_toEndOf="@id/iOS_til_adminlogin_password"
+        app:layout_constraintBottom_toBottomOf="@id/iOS_til_adminlogin_password"
+        app:lottie_loop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iOS_til_adminlogin_accesskey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="70dp"
+        android:paddingLeft="70dp"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:layout_constraintBottom_toTopOf="@id/iOS_btn_adminlogin_action"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/iOS_tiet_adminlogin_accesskey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="12dp"
+            android:hint="@string/hint_access_key" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iOS_admin_image_accesskey"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_fileName="lock.json"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@id/iOS_til_adminlogin_accesskey"
+        app:layout_constraintTop_toTopOf="@id/iOS_til_adminlogin_accesskey"
+        app:lottie_loop="true"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:id="@+id/iOS_btn_adminlogin_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/darkgray"
+        android:text="@string/access_button_txt"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
